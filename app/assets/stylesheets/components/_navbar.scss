@@ -75,3 +75,13 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+.navbar-wagon-right a {
+  color: black;
+  font-size: 15px;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.6;
+  }
+}
+

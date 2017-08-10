@@ -1,0 +1,21 @@
+<div class="formulaire">
+  <div class="formulaire-content">
+    <div>
+      <h2>Recipe</h2>
+      <h3><strong><%= @cocktail.name %></strong></h3>
+         <ul class="list-unstyled">
+        <% @cocktail.doses.each do |dose|  %>
+        <li>- <%= dose.description %> de <%= dose.ingredient.name %> </li>
+        <% end %>
+      </ul>
+      <%= simple_form_for [ @cocktail, @dose ] do |f|%>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+      <%= f.submit 'Add dose' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+

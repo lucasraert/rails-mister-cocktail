@@ -1,0 +1,23 @@
+.formulaire {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100vh - 170px);
+  background: url("https://static.pexels.com/photos/372959/pexels-photo-372959.jpeg");
+  background-size: cover;
+}
+
+.formulaire-content {
+  background: white;
+  opacity: 0.95;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.formulaire-content h2 {
+  margin-bottom: 30px;
+}

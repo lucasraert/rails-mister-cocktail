@@ -1,0 +1,20 @@
+.banner {
+  height: calc(100vh - 70px);
+  width: 100vw;
+  background: url("https://static.pexels.com/photos/316891/pexels-photo-316891.jpeg");
+  background-size: cover;
+  color: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner h2 {
+font-family: 'Merriweather', serif;
+font-size: 57px;
+}
+
+.banner p {
+font-family: 'Cormorant Garamond', serif;
+font-size: 17px;
+}

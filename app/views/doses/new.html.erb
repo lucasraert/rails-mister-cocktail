@@ -1,0 +1,12 @@
+<div class="formulaire">
+  <div class="formulaire-content">
+    <div>
+      <h2>Recipe</h2>
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.input :description %>
+      <%= f.input :ingredient_id, collection: Ingredient.all.sort %>
+      <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+</div>
