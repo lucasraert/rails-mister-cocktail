@@ -1,23 +1,21 @@
 .formulaire {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: calc(100vh - 170px);
-  background: url("https://static.pexels.com/photos/372959/pexels-photo-372959.jpeg");
-  background-size: cover;
-}
-
-.formulaire-content {
   background: white;
-  opacity: 0.95;
-  height: 50%;
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 3px;
+  padding: 120px;
+  height: calc(100vh)
 }
 
-.formulaire-content h2 {
-  margin-bottom: 30px;
+#formulaire-content {
+  opacity: 0.95;
+  width: 70%;
+  border-radius: 3px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+#formulaire-ingredients {
+  font-size: 14px;
+}
+
+#formulaire-image {
+  margin-right: 150px;
 }

@@ -1,20 +1,23 @@
 <div class="formulaire">
-  <div class="formulaire-content">
-    <div>
-      <h2>Recipe</h2>
-      <h3><strong><%= @cocktail.name %></strong></h3>
-      <ul class="list-unstyled">
-        <% @cocktail.doses.each do |dose|  %>
-        <li>- <%= dose.description %> de <%= dose.ingredient.name %> </li>
+<h3><%= @cocktail.name %></h3>
+    <div class="row">
+      <div class ="col-xs-12 col-sm-5" id="formulaire-image">
+        <%= cl_image_tag @cocktail.photo, height: 450, width: 700, crop: :fill %>
+      </div>
+      <div class="col-xs-12 col-sm-5" id="formulaire-ingredients">
+        <ul class="list-unstyled">
+          <% @cocktail.doses.each do |dose|  %>
+          <li>- <%= dose.description %> de <%= dose.ingredient.name %> </li>
+          <% end %>
+        </ul>
+        <%= simple_form_for [ @cocktail, @dose ] do |f|%>
+        <%= f.input :description %>
+        <%= f.association :ingredient %>
+        <%= f.submit 'Add dose' %>
         <% end %>
-      </ul>
-      <%= simple_form_for [ @cocktail, @dose ] do |f|%>
-      <%= f.input :description %>
-      <%= f.association :ingredient %>
-      <%= f.submit 'Add dose' %>
-      <% end %>
+        <%= link_to "Delete cocktail", cocktail_path(@cocktail), method: :delete, class: "btn btn-default"%>
+      </div>
     </div>
-  </div>
 </div>
 
 

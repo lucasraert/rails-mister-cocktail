@@ -38,8 +38,10 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
 
-# Use cloudinary
+# Use for images
 gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave', '~> 0.11.2'
 
 # Add this line if you use Rails 5.1
 # Use Capistrano for deployment

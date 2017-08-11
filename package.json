@@ -1,0 +1,26 @@
+{
+  "name": "rails-mister-cocktail",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "smooth-scroll": "github:cferdinandi/smooth-scroll"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasraert/rails-mister-cocktail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasraert/rails-mister-cocktail/issues"
+  },
+  "homepage": "https://github.com/lucasraert/rails-mister-cocktail#readme"
+}

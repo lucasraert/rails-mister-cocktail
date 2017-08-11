@@ -2,20 +2,32 @@
   <div class="banner-content">
     <h2>&ldquo;Too much of anything is bad, but too much good whiskey is barely enough.&rdquo;</h2>
     <p>MARK TWAIN</p>
+    <a data-scroll href="#list" class="buttn-link">
+      <div class="buttn">Discover</div></a>
+    </div>
   </div>
-</div>
-<div class="list">
-  <div class="container">
-    <div id="header">
-      Drinks
+  <div id="list">
+    <div class="container">
+      <div id="header_list">
+      <div class="title_line">
+        <div id="line"></div><div id="header">
+        Menu cocktails
+      </div>
+      </div>
+      <div class="add_cocktail">
+        <%= link_to new_cocktail_path do %>
+     <i class="fa fa-plus" aria-hidden="true"></i>
+      Add cocktail
+    <% end %>
+      </div>
     </div>
     <div class="row">
       <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-4">
         <!-- insert <div class="card"> -->
-        <%= link_to cocktail_path(cocktail), class: "card-link" do %>
+        <%= link_to cocktail_path(cocktail), class: "card-link card-desc" do %>
         <div class="card">
-          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1496560963059-71f771ddb41f?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=');"></div>
+          <div class="card-img" style="background-image: url('<%= cocktail.photo %>');"></div>
           <div class="card-description">
             <h2><%= cocktail.name %></h2>
           </div>

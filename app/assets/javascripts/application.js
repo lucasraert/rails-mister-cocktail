@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require ./vendor/smooth-scroll.min.js
 //= require_tree .
+
+var scroll = new SmoothScroll('a[href*="#"]');
